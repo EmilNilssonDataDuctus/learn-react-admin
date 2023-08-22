@@ -7,6 +7,7 @@ import {
   TextField,
   UrlField,
 } from "react-admin";
+import { MyUrlField } from "../Custom/MyUrlField";
 
 export const ResponsiveList = () => {
   const isSmall = useMediaQuery<Theme>((theme) => theme.breakpoints.down("sm"));
@@ -27,6 +28,7 @@ export const ResponsiveList = () => {
           {/* <TextField source="address.street" /> */}
           <TextField source="phone" />
           <UrlField source="website" />
+          <MyUrlField source="website" />
           <TextField source="company.name" />
         </Datagrid>
       )}
