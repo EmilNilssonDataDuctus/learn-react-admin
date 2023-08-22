@@ -1,13 +1,9 @@
-import {
-  Admin,
-  Resource,
-  ListGuesser,
-  EditGuesser,
-  ShowGuesser,
-} from "react-admin";
-import { dataProvider } from "./dataProvider";
+import { Admin, ListGuesser, Resource } from "react-admin";
 import { authProvider } from "./authProvider";
+import { dataProvider } from "./dataProvider";
 
 export const App = () => (
-  <Admin dataProvider={dataProvider} authProvider={authProvider}></Admin>
+  <Admin dataProvider={dataProvider} authProvider={authProvider}>
+    <Resource name="users" list={ListGuesser} />
+  </Admin>
 );
