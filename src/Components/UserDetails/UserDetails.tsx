@@ -1,4 +1,5 @@
 import { EmailField, Show, SimpleShowLayout, TextField } from "react-admin";
+import { MyUrlField } from "../Custom/MyUrlField";
 
 export const UserShow = () => (
   <Show>
@@ -9,7 +10,7 @@ export const UserShow = () => (
       <EmailField source="email" />
       <TextField source="address.street" />
       <TextField source="phone" />
-      <TextField source="website" />
+      <MyUrlField source="website" />
       <TextField source="company.name" />
     </SimpleShowLayout>
   </Show>
