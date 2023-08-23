@@ -7,6 +7,6 @@ import { dataProvider } from "./dataProvider";
 export const App = () => (
   <Admin dataProvider={dataProvider} authProvider={authProvider}>
     <Resource name="posts" list={PostsList} />
-    <Resource name="users" list={ResponsiveList} />
+    <Resource name="users" list={ResponsiveList} recordRepresentation="name" />
   </Admin>
 );
