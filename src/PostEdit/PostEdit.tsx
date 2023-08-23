@@ -4,9 +4,9 @@ export const PostEdit = () => (
   <Edit>
     <SimpleForm>
       <ReferenceInput source="userId" reference="users" />
-      <TextInput source="id" />
+      <TextInput source="id" disabled />
       <TextInput source="title" />
-      <TextInput source="body" />
+      <TextInput source="body" multiline rows={5} />
     </SimpleForm>
   </Edit>
 );
