@@ -8,6 +8,7 @@ import { PostShow } from "./Components/PostShow/PostShow";
 import { PostsList } from "./Components/PostsList/PostsList";
 import { ResponsiveList } from "./Components/ResponsiveList/ResponsiveList";
 import { UserShow } from "./Components/UserDetails/UserDetails";
+import { DashBoard } from "./DashBoard/DashBoard";
 import { authProvider } from "./authProvider";
 import { dataProvider } from "./dataProvider";
 
@@ -16,6 +17,7 @@ export const App = () => (
     dataProvider={dataProvider}
     authProvider={authProvider}
     loginPage={MyLoginPage}
+    dashboard={DashBoard}
   >
     <Resource
       name="posts"
